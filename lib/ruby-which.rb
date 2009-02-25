@@ -4,6 +4,7 @@
 # or from what path on your system it's coming from.
 
 # by Pistos
+# http://github.com/Pistos/ruby-which
 
 # <manveru> you need organization...
 

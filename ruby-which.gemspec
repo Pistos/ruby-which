@@ -7,7 +7,7 @@ spec = Gem::Specification.new do |s|
     s.version = '0.5.0'
     s.summary = 'Like the UNIX "which" tool for Ruby libraries.'
     s.description = %{Use ruby-which for those times when you don't know which version of a library you're require-ing, or from what path on your system it's coming from.}
-    #s.homepage = 'http://purepistos.net/diakonos'
+    s.homepage = 'http://github.com/Pistos/ruby-which'
     #s.rubyforge_project = 'ruby-which'
 
     s.authors = [ 'Pistos' ]
