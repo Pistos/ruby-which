@@ -11,7 +11,7 @@ library path if the given library is found in the $LOAD_PATH.
 
 == Installation
 
-    gem install ruby-which --source http://gems.github.com
+    gem install --source http://gems.github.com Pistos-ruby-which
 
 == Example usage:
 
