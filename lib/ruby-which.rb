@@ -17,7 +17,11 @@ class Which
   # Under rare circumstances, an Array may be returned in the case of multiple
   # matches under one path.
   def self.which( lib )
-    return nil  if ! require( lib )
+    begin
+      require( lib )
+    rescue LoadError
+      return nil
+    end
 
     $LOAD_PATH.each do |path|
       extension = nil
