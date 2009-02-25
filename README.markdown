@@ -5,7 +5,7 @@ by Pistos
 For those times when you don't know which version of a library you're require-ing,
 or from what path on your system it's coming from.
 
-<manveru> you need organization...
+"you need organization..." -- manveru
 
 ### Example usage:
 
