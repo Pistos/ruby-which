@@ -8,7 +8,7 @@ verbose = false
 
 argv = ARGV.dup
 while argv.length > 0
-  arg = argv.unshift
+  arg = argv.shift
   case arg
   when '-v', '--verbose'
     verbose = true
@@ -17,9 +17,19 @@ while argv.length > 0
   end
 end
 
+if verbose
+  puts "Searching"
+  puts $LOAD_PATH.inspect
+end
+
 libs.each do |lib|
   if verbose
     print "#{lib}: "
   end
-  puts Which.which( arg )
+  found = Which.which( arg )
+  if found
+    puts found
+  else
+    puts "(not found)"
+  end
 end
