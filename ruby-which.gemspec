@@ -15,13 +15,13 @@ spec = Gem::Specification.new do |s|
 
     s.files = [
         #'CHANGELOG',
-        #'README',
+        'README.markdown',
         'LICENCE',
         'bin/rwhich',
         'lib/ruby-which.rb',
     ]
     s.executables = [ 'rwhich' ]
-    s.extra_rdoc_files = [ 'LICENCE', ] # 'README', 'CHANGELOG',
+    s.extra_rdoc_files = [ 'README.markdown', 'LICENCE', ]
     #s.test_files = Dir.glob( 'test/*-test.rb' )
     s.has_rdoc = true
 end
