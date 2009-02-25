@@ -17,11 +17,6 @@ while argv.length > 0
   end
 end
 
-if verbose
-  puts "Searching"
-  puts $LOAD_PATH.inspect
-end
-
 libs.each do |lib|
   if verbose
     print "#{lib}: "

@@ -16,6 +16,8 @@ class Which
   # Under rare circumstances, an Array may be returned in the case of multiple
   # matches under one path.
   def self.which( lib )
+    return nil  if ! require( lib )
+
     $LOAD_PATH.each do |path|
       extension = nil
       if File.extname( lib ).empty?
