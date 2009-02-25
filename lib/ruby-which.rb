@@ -26,7 +26,7 @@ class Which
     $LOAD_PATH.each do |path|
       extension = nil
       if File.extname( lib ).empty?
-        extension = '.{rb,so,class}'
+        extension = '.{rb,so,o,dll,class}'
       end
       found = Dir[ "#{path}/#{lib}#{extension}" ]
       if found.size == 1
