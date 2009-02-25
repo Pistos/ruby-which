@@ -1,8 +1,4 @@
-#!/usr/bin/env ruby
-
-require 'rubygems'
-
-spec = Gem::Specification.new do |s|
+Gem::Specification.new do |s|
     s.name = 'ruby-which'
     s.version = '0.5.0'
     s.summary = 'Like the UNIX "which" tool for Ruby libraries.'
@@ -24,8 +20,4 @@ spec = Gem::Specification.new do |s|
     s.extra_rdoc_files = [ 'README', 'LICENCE', ]
     #s.test_files = Dir.glob( 'test/*-test.rb' )
     s.has_rdoc = true
-end
-
-if $PROGRAM_NAME == __FILE__
-    Gem::Builder.new( spec ).build
 end
