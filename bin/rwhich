@@ -1,0 +1,25 @@
+#!/usr/bin/env ruby
+
+require 'rubygems'
+require 'ruby-which'
+
+libs = []
+verbose = false
+
+argv = ARGV.dup
+while argv.length > 0
+  arg = argv.unshift
+  case arg
+  when '-v', '--verbose'
+    verbose = true
+  else
+    libs << arg
+  end
+end
+
+libs.each do |lib|
+  if verbose
+    print "#{lib}: "
+  end
+  puts Which.which( arg )
+end
