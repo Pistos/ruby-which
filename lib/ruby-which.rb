@@ -18,7 +18,7 @@ class Which
   # matches under one path.
   def self.which( lib )
     begin
-      Kernel#require( lib )
+      require lib
     rescue LoadError
       return nil
     end
@@ -37,9 +37,5 @@ class Which
     end
 
     nil
-  end
-
-  class << self
-    alias_method :require, :which
   end
 end

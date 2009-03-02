@@ -1,6 +1,6 @@
 Gem::Specification.new do |s|
     s.name = 'ruby-which'
-    s.version = '0.5.2'
+    s.version = '0.5.3'
     s.summary = 'Like the UNIX "which" tool for Ruby libraries.'
     s.description = %{Use ruby-which for those times when you don't know which version of a library you're require-ing, or from what path on your system it's coming from.}
     s.homepage = 'http://github.com/Pistos/ruby-which'
